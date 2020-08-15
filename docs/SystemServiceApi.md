@@ -1,4 +1,4 @@
-# OpenapiClient::SystemServiceApi
+#   MadanaSampleclientRuby::SystemServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -19,14 +19,14 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SystemServiceApi.new
+api_instance =   MadanaSampleclientRuby::SystemServiceApi.new
 
 begin
   result = api_instance.get_all_objects
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SystemServiceApi->get_all_objects: #{e}"
 end
 ```
@@ -61,15 +61,15 @@ Return the current application usage
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SystemServiceApi.new
+api_instance =   MadanaSampleclientRuby::SystemServiceApi.new
 
 begin
   #Return the current application usage.
   result = api_instance.get_application
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SystemServiceApi->get_application: #{e}"
 end
 ```

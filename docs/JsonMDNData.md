@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNData
+#   MadanaSampleclientRuby::JsonMDNData
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNData.new(data: null)
+instance =   MadanaSampleclientRuby::JsonMDNData.new(data: null)
 ```
 
 

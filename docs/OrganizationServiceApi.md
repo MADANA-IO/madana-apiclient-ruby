@@ -1,4 +1,4 @@
-# OpenapiClient::OrganizationServiceApi
+#   MadanaSampleclientRuby::OrganizationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -18,14 +18,14 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::OrganizationServiceApi.new
+api_instance =   MadanaSampleclientRuby::OrganizationServiceApi.new
 
 begin
   result = api_instance.get_nodes3
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling OrganizationServiceApi->get_nodes3: #{e}"
 end
 ```

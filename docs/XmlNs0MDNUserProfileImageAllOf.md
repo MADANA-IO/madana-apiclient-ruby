@@ -1,4 +1,4 @@
-# OpenapiClient::XmlNs0MDNUserProfileImageAllOf
+#   MadanaSampleclientRuby::XmlNs0MDNUserProfileImageAllOf
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::XmlNs0MDNUserProfileImageAllOf.new(id: null,
+instance =   MadanaSampleclientRuby::XmlNs0MDNUserProfileImageAllOf.new(id: null,
                                  image: null)
 ```
 

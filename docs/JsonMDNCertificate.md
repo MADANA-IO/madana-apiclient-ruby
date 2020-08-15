@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNCertificate
+#   MadanaSampleclientRuby::JsonMDNCertificate
 
 ## Properties
 
@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNCertificate.new(pem: null)
+instance =   MadanaSampleclientRuby::JsonMDNCertificate.new(pem: null)
 ```
 
 

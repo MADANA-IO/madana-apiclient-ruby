@@ -1,4 +1,4 @@
-# OpenapiClient::JsonAnalysisRequest
+#   MadanaSampleclientRuby::JsonAnalysisRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonAnalysisRequest.new(token_amount: null,
+instance =   MadanaSampleclientRuby::JsonAnalysisRequest.new(token_amount: null,
                                  treshold: null,
                                  data_collection_method: null,
                                  data_collection_config: null,

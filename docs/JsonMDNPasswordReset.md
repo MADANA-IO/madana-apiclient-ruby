@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNPasswordReset
+#   MadanaSampleclientRuby::JsonMDNPasswordReset
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNPasswordReset.new(password: null,
+instance =   MadanaSampleclientRuby::JsonMDNPasswordReset.new(password: null,
                                  token: null,
                                  mail: null)
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::NodeServiceApi
+#   MadanaSampleclientRuby::NodeServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -19,14 +19,14 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::NodeServiceApi.new
+api_instance =   MadanaSampleclientRuby::NodeServiceApi.new
 
 begin
   result = api_instance.get_nodes2
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling NodeServiceApi->get_nodes2: #{e}"
 end
 ```
@@ -59,17 +59,17 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::NodeServiceApi.new
+api_instance =   MadanaSampleclientRuby::NodeServiceApi.new
 opts = {
-  body: OpenapiClient::JsonNodeInfo.new # JsonNodeInfo | 
+  body:   MadanaSampleclientRuby::JsonNodeInfo.new # JsonNodeInfo | 
 }
 
 begin
   result = api_instance.post_node_info(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling NodeServiceApi->post_node_info: #{e}"
 end
 ```

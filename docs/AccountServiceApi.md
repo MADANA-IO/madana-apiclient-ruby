@@ -1,4 +1,4 @@
-# OpenapiClient::AccountServiceApi
+#   MadanaSampleclientRuby::AccountServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -21,15 +21,15 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AccountServiceApi.new
+api_instance =   MadanaSampleclientRuby::AccountServiceApi.new
 token = 'token_example' # String | 
 
 begin
   result = api_instance.activate_user(token)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AccountServiceApi->activate_user: #{e}"
 end
 ```
@@ -67,18 +67,18 @@ Sends an Password reset mail to the given MailAddress
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AccountServiceApi.new
+api_instance =   MadanaSampleclientRuby::AccountServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNMailAddress.new # JsonMDNMailAddress | - the MaiAddress under which the user has signed up
+  body:   MadanaSampleclientRuby::JsonMDNMailAddress.new # JsonMDNMailAddress | - the MaiAddress under which the user has signed up
 }
 
 begin
   #Sends an Password reset mail to the given MailAddress.
   result = api_instance.create_object(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AccountServiceApi->create_object: #{e}"
 end
 ```
@@ -116,15 +116,15 @@ Used to request a new  activation-mail for the user
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AccountServiceApi.new
+api_instance =   MadanaSampleclientRuby::AccountServiceApi.new
 
 begin
   #Used to request a new  activation-mail for the user.
   result = api_instance.request_verification_mail
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AccountServiceApi->request_verification_mail: #{e}"
 end
 ```
@@ -159,18 +159,18 @@ Receives the Password reset and tries to set the provided password for the user.
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AccountServiceApi.new
+api_instance =   MadanaSampleclientRuby::AccountServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNPasswordReset.new # JsonMDNPasswordReset | - the MDN_PasswordReset Object
+  body:   MadanaSampleclientRuby::JsonMDNPasswordReset.new # JsonMDNPasswordReset | - the MDN_PasswordReset Object
 }
 
 begin
   #Receives the Password reset and tries to set the provided password for the user.
   result = api_instance.update_object(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AccountServiceApi->update_object: #{e}"
 end
 ```

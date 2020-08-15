@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNUserProfileImage
+#   MadanaSampleclientRuby::JsonMDNUserProfileImage
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNUserProfileImage.new(id: null,
+instance =   MadanaSampleclientRuby::JsonMDNUserProfileImage.new(id: null,
                                  image: null)
 ```
 

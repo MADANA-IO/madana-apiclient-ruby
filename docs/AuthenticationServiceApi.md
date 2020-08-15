@@ -1,4 +1,4 @@
-# OpenapiClient::AuthenticationServiceApi
+#   MadanaSampleclientRuby::AuthenticationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -30,18 +30,18 @@ Authenticates a new application and returns the token
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNCertificate.new # JsonMDNCertificate | the credentials used to validate the user
+  body:   MadanaSampleclientRuby::JsonMDNCertificate.new # JsonMDNCertificate | the credentials used to validate the user
 }
 
 begin
   #Authenticates a new application and returns the token.
   result = api_instance.authenticate_application(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->authenticate_application: #{e}"
 end
 ```
@@ -77,18 +77,18 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 wallet = 'wallet_example' # String | the wallet which should be authenticated
 opts = {
-  body: OpenapiClient::JsonMDNOAuthToken.new # JsonMDNOAuthToken | Token containing nonce and signate
+  body:   MadanaSampleclientRuby::JsonMDNOAuthToken.new # JsonMDNOAuthToken | Token containing nonce and signate
 }
 
 begin
   result = api_instance.authenticate_ethereum_wallet(wallet, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->authenticate_ethereum_wallet: #{e}"
 end
 ```
@@ -127,18 +127,18 @@ Authenticates a new user and returns the token (  forbidden if the credentials c
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNUserCredentials.new # JsonMDNUserCredentials | the credentials used to validate the user
+  body:   MadanaSampleclientRuby::JsonMDNUserCredentials.new # JsonMDNUserCredentials | the credentials used to validate the user
 }
 
 begin
   #Authenticates a new user and returns the token (  forbidden if the credentials cannot be validated ).
   result = api_instance.authenticate_user(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->authenticate_user: #{e}"
 end
 ```
@@ -174,18 +174,18 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 wallet = 'wallet_example' # String | the wallet which should be authenticated
 opts = {
-  body: OpenapiClient::JsonMDNOAuthToken.new # JsonMDNOAuthToken | Token containing nonce and signate
+  body:   MadanaSampleclientRuby::JsonMDNOAuthToken.new # JsonMDNOAuthToken | Token containing nonce and signate
 }
 
 begin
   result = api_instance.authenticate_with_ethereum_challenge(wallet, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->authenticate_with_ethereum_challenge: #{e}"
 end
 ```
@@ -224,15 +224,15 @@ Returns the AUthorization URL to verify a Twitter Accounts
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 
 begin
   #Returns the AUthorization URL to verify a Twitter Accounts.
   result = api_instance.get_fractal_authentication_url
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->get_fractal_authentication_url: #{e}"
 end
 ```
@@ -267,9 +267,9 @@ Returns a nonce for the client which is used as content for the to be created si
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 wallet = 'wallet_example' # String | - wallet address as String * @HTTP 417 If the address is not valid
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -279,7 +279,7 @@ begin
   #Returns a nonce for the client which is used as content for the to be created signature.
   result = api_instance.get_nonce_for_ethereum_wallet(wallet, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->get_nonce_for_ethereum_wallet: #{e}"
 end
 ```
@@ -318,15 +318,15 @@ Used to validate the active connection with the API
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 
 begin
   #Used to validate the active connection with the API.
   result = api_instance.get_object
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->get_object: #{e}"
 end
 ```
@@ -361,15 +361,15 @@ Returns the AUthorization URL to verify a Twitter Accounts
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 
 begin
   #Returns the AUthorization URL to verify a Twitter Accounts.
   result = api_instance.get_twitter_authentication_url
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->get_twitter_authentication_url: #{e}"
 end
 ```
@@ -404,9 +404,9 @@ Used as Callback URL when users have successfully authorized their facbeook acco
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 opts = {
   body: 'body_example' # String | 
 }
@@ -415,7 +415,7 @@ begin
   #Used as Callback URL when users have successfully authorized their facbeook account.
   result = api_instance.set_facebook_uid(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->set_facebook_uid: #{e}"
 end
 ```
@@ -451,9 +451,9 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 opts = {
   body: 'body_example' # String | 
 }
@@ -461,7 +461,7 @@ opts = {
 begin
   result = api_instance.set_fractal_uid(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->set_fractal_uid: #{e}"
 end
 ```
@@ -497,17 +497,17 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::AuthenticationServiceApi.new
+api_instance =   MadanaSampleclientRuby::AuthenticationServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNOAuthToken.new # JsonMDNOAuthToken | 
+  body:   MadanaSampleclientRuby::JsonMDNOAuthToken.new # JsonMDNOAuthToken | 
 }
 
 begin
   result = api_instance.set_twitter_uid(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling AuthenticationServiceApi->set_twitter_uid: #{e}"
 end
 ```

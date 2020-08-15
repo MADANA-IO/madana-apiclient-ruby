@@ -1,4 +1,4 @@
-# OpenapiClient::UserServiceApi
+#   MadanaSampleclientRuby::UserServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -28,19 +28,19 @@ Creates a new user object
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 opts = {
   referrer: 'referrer_example', # String | 
-  body: OpenapiClient::JsonMDNUser.new # JsonMDNUser | provided user object inheriting properties and credentials
+  body:   MadanaSampleclientRuby::JsonMDNUser.new # JsonMDNUser | provided user object inheriting properties and credentials
 }
 
 begin
   #Creates a new user object.
   result = api_instance.create_object2(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->create_object2: #{e}"
 end
 ```
@@ -79,16 +79,16 @@ Deletes an User based on the provided id and securitycontext
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 
 begin
   #Deletes an User based on the provided id and securitycontext.
   result = api_instance.delete_object(username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->delete_object: #{e}"
 end
 ```
@@ -126,9 +126,9 @@ Deletes linked account from the user and securitycontext
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 ident = 'ident_example' # String | 
 platform = 'platform_example' # String | 
 username = 'username_example' # String | 
@@ -137,7 +137,7 @@ begin
   #Deletes linked account from the user and securitycontext.
   result = api_instance.delete_object_0(ident, platform, username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->delete_object_0: #{e}"
 end
 ```
@@ -175,15 +175,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 
 begin
   result = api_instance.get_avatars(username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->get_avatars: #{e}"
 end
 ```
@@ -219,15 +219,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 
 begin
   result = api_instance.get_certificates(username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->get_certificates: #{e}"
 end
 ```
@@ -263,15 +263,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 
 begin
   result = api_instance.get_object2(username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->get_object2: #{e}"
 end
 ```
@@ -307,18 +307,18 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 opts = {
-  body: OpenapiClient::JsonMDNUserProfileImage.new # JsonMDNUserProfileImage | 
+  body:   MadanaSampleclientRuby::JsonMDNUserProfileImage.new # JsonMDNUserProfileImage | 
 }
 
 begin
   result = api_instance.set_avatar(username, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->set_avatar: #{e}"
 end
 ```
@@ -355,18 +355,18 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 opts = {
-  body: OpenapiClient::JsonMDNUserSetting.new # JsonMDNUserSetting | 
+  body:   MadanaSampleclientRuby::JsonMDNUserSetting.new # JsonMDNUserSetting | 
 }
 
 begin
   result = api_instance.set_settings(username, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->set_settings: #{e}"
 end
 ```
@@ -405,19 +405,19 @@ Updates Userproperties based on the provided user object
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::UserServiceApi.new
+api_instance =   MadanaSampleclientRuby::UserServiceApi.new
 username = 'username_example' # String | 
 opts = {
-  body: OpenapiClient::JsonMDNUser.new # JsonMDNUser | the new user object inherting all properties that should be change
+  body:   MadanaSampleclientRuby::JsonMDNUser.new # JsonMDNUser | the new user object inherting all properties that should be change
 }
 
 begin
   #Updates Userproperties based on the provided user object.
   result = api_instance.update_object2(username, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling UserServiceApi->update_object2: #{e}"
 end
 ```

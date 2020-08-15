@@ -1,4 +1,4 @@
-# OpenapiClient::CertificateServiceApi
+#   MadanaSampleclientRuby::CertificateServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -22,18 +22,18 @@ Issues certificates for logged-in users
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::CertificateServiceApi.new
+api_instance =   MadanaSampleclientRuby::CertificateServiceApi.new
 opts = {
-  body: OpenapiClient::JsonMDNData.new # JsonMDNData | 
+  body:   MadanaSampleclientRuby::JsonMDNData.new # JsonMDNData | 
 }
 
 begin
   #Issues certificates for logged-in users.
   result = api_instance.authenticate_certificate(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling CertificateServiceApi->authenticate_certificate: #{e}"
 end
 ```
@@ -69,14 +69,14 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::CertificateServiceApi.new
+api_instance =   MadanaSampleclientRuby::CertificateServiceApi.new
 
 begin
   result = api_instance.get_certificate
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling CertificateServiceApi->get_certificate: #{e}"
 end
 ```
@@ -109,15 +109,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::CertificateServiceApi.new
+api_instance =   MadanaSampleclientRuby::CertificateServiceApi.new
 fingerprint = 'fingerprint_example' # String | 
 
 begin
   result = api_instance.get_certificate_0(fingerprint)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling CertificateServiceApi->get_certificate_0: #{e}"
 end
 ```

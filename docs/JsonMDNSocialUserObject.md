@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNSocialUserObject
+#   MadanaSampleclientRuby::JsonMDNSocialUserObject
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNSocialUserObject.new(image: null,
+instance =   MadanaSampleclientRuby::JsonMDNSocialUserObject.new(image: null,
                                  platform: null,
                                  ident: null)
 ```

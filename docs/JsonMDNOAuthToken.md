@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNOAuthToken
+#   MadanaSampleclientRuby::JsonMDNOAuthToken
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNOAuthToken.new(token: null,
+instance =   MadanaSampleclientRuby::JsonMDNOAuthToken.new(token: null,
                                  verifier: null)
 ```
 

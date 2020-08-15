@@ -1,4 +1,4 @@
-# OpenapiClient::JsonNodeInfo
+#   MadanaSampleclientRuby::JsonNodeInfo
 
 ## Properties
 
@@ -23,9 +23,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonNodeInfo.new(hardware_baseboard: null,
+instance =   MadanaSampleclientRuby::JsonNodeInfo.new(hardware_baseboard: null,
                                  public_key: null,
                                  memory: null,
                                  processors: null,

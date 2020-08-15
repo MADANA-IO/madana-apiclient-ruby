@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNUserAllOf
+#   MadanaSampleclientRuby::JsonMDNUserAllOf
 
 ## Properties
 
@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNUserAllOf.new(mail: null,
+instance =   MadanaSampleclientRuby::JsonMDNUserAllOf.new(mail: null,
                                  last_name: null,
                                  guid: null,
                                  settings: null,

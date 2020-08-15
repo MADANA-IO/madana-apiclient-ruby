@@ -1,4 +1,4 @@
-# OpenapiClient::XmlNs0MDNSettingAllOf
+#   MadanaSampleclientRuby::XmlNs0MDNSettingAllOf
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::XmlNs0MDNSettingAllOf.new(description: null,
+instance =   MadanaSampleclientRuby::XmlNs0MDNSettingAllOf.new(description: null,
                                  id: null,
                                  name: null)
 ```

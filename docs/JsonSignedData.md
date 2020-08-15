@@ -1,4 +1,4 @@
-# OpenapiClient::JsonSignedData
+#   MadanaSampleclientRuby::JsonSignedData
 
 ## Properties
 
@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonSignedData.new(fingerpint: null,
+instance =   MadanaSampleclientRuby::JsonSignedData.new(fingerpint: null,
                                  signature: null,
                                  data: null)
 ```

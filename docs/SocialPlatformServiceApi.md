@@ -1,4 +1,4 @@
-# OpenapiClient::SocialPlatformServiceApi
+#   MadanaSampleclientRuby::SocialPlatformServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -22,9 +22,9 @@ Used to Handle Incoming Webhooks from Facebook
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialPlatformServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialPlatformServiceApi.new
 opts = {
   body: 'body_example' # String | 
 }
@@ -33,7 +33,7 @@ begin
   #Used to Handle Incoming Webhooks from Facebook.
   result = api_instance.get_platforms(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialPlatformServiceApi->get_platforms: #{e}"
 end
 ```
@@ -71,9 +71,9 @@ Used to Handle Incoming Webhooks from Facebook
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialPlatformServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialPlatformServiceApi.new
 opts = {
   body: 'body_example' # String | 
 }
@@ -82,7 +82,7 @@ begin
   #Used to Handle Incoming Webhooks from Facebook.
   result = api_instance.listen_twitter_webhook(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialPlatformServiceApi->listen_twitter_webhook: #{e}"
 end
 ```
@@ -120,9 +120,9 @@ Used to Handle Incoming Webhooks from Twitter
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialPlatformServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialPlatformServiceApi.new
 opts = {
   crc_token: 'crc_token_example' # String | 
 }
@@ -131,7 +131,7 @@ begin
   #Used to Handle Incoming Webhooks from Twitter.
   result = api_instance.register_twitter_webhook(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialPlatformServiceApi->register_twitter_webhook: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNUserCredentials
+#   MadanaSampleclientRuby::JsonMDNUserCredentials
 
 ## Properties
 
@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNUserCredentials.new(password: null,
+instance =   MadanaSampleclientRuby::JsonMDNUserCredentials.new(password: null,
                                  username: null)
 ```
 

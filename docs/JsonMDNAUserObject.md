@@ -1,4 +1,4 @@
-# OpenapiClient::JsonMDNAUserObject
+#   MadanaSampleclientRuby::JsonMDNAUserObject
 
 ## Properties
 
@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 ## Code Sample
 
 ```ruby
-require 'OpenapiClient'
+require '  MadanaSampleclientRuby'
 
-instance = OpenapiClient::JsonMDNAUserObject.new(image: null,
+instance =   MadanaSampleclientRuby::JsonMDNAUserObject.new(image: null,
                                  activated: null,
                                  created: null,
                                  last_active: null,

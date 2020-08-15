@@ -1,4 +1,4 @@
-# OpenapiClient::RequestServiceApi
+#   MadanaSampleclientRuby::RequestServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -32,20 +32,20 @@ Is used to upload and park the data till the AnalysisRequest gets processed
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  body: OpenapiClient::JsonSignedData.new # JsonSignedData | 
+  body:   MadanaSampleclientRuby::JsonSignedData.new # JsonSignedData | 
 }
 
 begin
   #Is used to upload and park the data till the AnalysisRequest gets processed.
   result = api_instance.add_data(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->add_data: #{e}"
 end
 ```
@@ -85,20 +85,20 @@ Endpoint is called from the Analysis Processing entity to submit the result
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  body: OpenapiClient::JsonSignedData.new # JsonSignedData | 
+  body:   MadanaSampleclientRuby::JsonSignedData.new # JsonSignedData | 
 }
 
 begin
   #Endpoint is called from the Analysis Processing entity to submit the result.
   result = api_instance.cancel_processing(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->cancel_processing: #{e}"
 end
 ```
@@ -138,19 +138,19 @@ Endpoint used to create a new Analysis Request
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  body: OpenapiClient::JsonSignedData.new # JsonSignedData | 
+  body:   MadanaSampleclientRuby::JsonSignedData.new # JsonSignedData | 
 }
 
 begin
   #Endpoint used to create a new Analysis Request.
   result = api_instance.create_new_request(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->create_new_request: #{e}"
 end
 ```
@@ -187,9 +187,9 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 opts = {
   limit: '30', # String | 
   offset: '0' # String | 
@@ -198,7 +198,7 @@ opts = {
 begin
   result = api_instance.get_actions(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_actions: #{e}"
 end
 ```
@@ -237,9 +237,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -249,7 +249,7 @@ begin
   #Is called from the APE to request all parked datasets.
   result = api_instance.get_agent(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_agent: #{e}"
 end
 ```
@@ -288,9 +288,9 @@ Returns UUIDs of existing analyses.
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
   created: 'false', # String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
@@ -306,7 +306,7 @@ begin
   #Returns UUIDs of existing analyses.
   result = api_instance.get_all_requests(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_all_requests: #{e}"
 end
 ```
@@ -351,9 +351,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -363,7 +363,7 @@ begin
   #Is called from the APE to request all parked datasets.
   result = api_instance.get_data(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_data: #{e}"
 end
 ```
@@ -402,9 +402,9 @@ Returns the details for certain Request. When requesting an analysis a view of t
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -414,7 +414,7 @@ begin
   #Returns the details for certain Request.
   result = api_instance.get_request(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_request: #{e}"
 end
 ```
@@ -453,9 +453,9 @@ Can be called from creator to request the AnalysisResult.
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -465,7 +465,7 @@ begin
   #Can be called from creator to request the AnalysisResult.
   result = api_instance.get_result(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->get_result: #{e}"
 end
 ```
@@ -504,9 +504,9 @@ Used to give consent for request. If the Endpoint is called from the creator of 
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -516,7 +516,7 @@ begin
   #Used to give consent for request.
   result = api_instance.give_consent(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->give_consent: #{e}"
 end
 ```
@@ -555,9 +555,9 @@ Endpoint used initialized addition datacollection parameters for requester
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -568,7 +568,7 @@ begin
   #Endpoint used initialized addition datacollection parameters for requester.
   result = api_instance.init_request_parameters(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->init_request_parameters: #{e}"
 end
 ```
@@ -608,9 +608,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example' # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -620,7 +620,7 @@ begin
   #Is called from the APE to request all parked datasets.
   result = api_instance.set_agent(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->set_agent: #{e}"
 end
 ```
@@ -659,20 +659,20 @@ Endpoint is called from the Analysis Processing entity to submit the result
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::RequestServiceApi.new
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
 uuid = 'uuid_example' # String | 
 opts = {
   authorization: 'authorization_example', # String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  body: OpenapiClient::JsonSignedData.new # JsonSignedData | 
+  body:   MadanaSampleclientRuby::JsonSignedData.new # JsonSignedData | 
 }
 
 begin
   #Endpoint is called from the Analysis Processing entity to submit the result.
   result = api_instance.set_result(uuid, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling RequestServiceApi->set_result: #{e}"
 end
 ```

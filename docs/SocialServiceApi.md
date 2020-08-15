@@ -1,4 +1,4 @@
-# OpenapiClient::SocialServiceApi
+#   MadanaSampleclientRuby::SocialServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -23,14 +23,14 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 
 begin
   result = api_instance.get_my_profile
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_my_profile: #{e}"
 end
 ```
@@ -65,15 +65,15 @@ Returns all Platforms / Systems that can be Connected to the MADANA Service
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 
 begin
   #Returns all Platforms / Systems that can be Connected to the MADANA Service.
   result = api_instance.get_platforms2
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_platforms2: #{e}"
 end
 ```
@@ -108,15 +108,15 @@ Returns the Ranking by PTS within the System
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 
 begin
   #Returns the Ranking by PTS within the System.
   result = api_instance.get_ranking
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_ranking: #{e}"
 end
 ```
@@ -149,15 +149,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 platform = 'platform_example' # String | 
 
 begin
   result = api_instance.get_social_platform_feed(platform)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_social_platform_feed: #{e}"
 end
 ```
@@ -193,9 +193,9 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 username = 'username_example' # String | 
 opts = {
   simple: 'false' # String | 
@@ -204,7 +204,7 @@ opts = {
 begin
   result = api_instance.get_user_profile(username, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_user_profile: #{e}"
 end
 ```
@@ -241,15 +241,15 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::SocialServiceApi.new
+api_instance =   MadanaSampleclientRuby::SocialServiceApi.new
 username = 'username_example' # String | 
 
 begin
   result = api_instance.get_user_profile_0(username)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling SocialServiceApi->get_user_profile_0: #{e}"
 end
 ```

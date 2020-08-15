@@ -1,4 +1,4 @@
-# OpenapiClient::DataCollectionServiceApi
+#   MadanaSampleclientRuby::DataCollectionServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -20,15 +20,15 @@ Method | HTTP request | Description
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::DataCollectionServiceApi.new
+api_instance =   MadanaSampleclientRuby::DataCollectionServiceApi.new
 name = 'name_example' # String | 
 
 begin
   result = api_instance.get_methods_for_type(name)
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling DataCollectionServiceApi->get_methods_for_type: #{e}"
 end
 ```
@@ -64,14 +64,14 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::DataCollectionServiceApi.new
+api_instance =   MadanaSampleclientRuby::DataCollectionServiceApi.new
 
 begin
   result = api_instance.get_nodes
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling DataCollectionServiceApi->get_nodes: #{e}"
 end
 ```
@@ -104,14 +104,14 @@ No authorization required
 
 ```ruby
 # load the gem
-require 'openapi_client'
+require 'madana-sampleclient-ruby'
 
-api_instance = OpenapiClient::DataCollectionServiceApi.new
+api_instance =   MadanaSampleclientRuby::DataCollectionServiceApi.new
 
 begin
   result = api_instance.get_types
   p result
-rescue OpenapiClient::ApiError => e
+rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling DataCollectionServiceApi->get_types: #{e}"
 end
 ```
