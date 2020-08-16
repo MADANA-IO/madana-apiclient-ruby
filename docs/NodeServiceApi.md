@@ -4,14 +4,15 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**get_bootstrap**](NodeServiceApi.md#get_bootstrap) | **GET** /nodes/bootstrap | 
 [**get_nodes2**](NodeServiceApi.md#get_nodes2) | **GET** /nodes | 
 [**post_node_info**](NodeServiceApi.md#post_node_info) | **POST** /nodes | 
 
 
 
-## get_nodes2
+## get_bootstrap
 
-> File get_nodes2
+> File get_bootstrap
 
 
 
@@ -24,7 +25,50 @@ require 'madana-sampleclient-ruby'
 api_instance =   MadanaSampleclientRuby::NodeServiceApi.new
 
 begin
-  result = api_instance.get_nodes2
+  result = api_instance.get_bootstrap
+  p result
+rescue   MadanaSampleclientRuby::ApiError => e
+  puts "Exception when calling NodeServiceApi->get_bootstrap: #{e}"
+end
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## get_nodes2
+
+> File get_nodes2(opts)
+
+
+
+### Example
+
+```ruby
+# load the gem
+require 'madana-sampleclient-ruby'
+
+api_instance =   MadanaSampleclientRuby::NodeServiceApi.new
+opts = {
+  owner: 'owner_example' # String | 
+}
+
+begin
+  result = api_instance.get_nodes2(opts)
   p result
 rescue   MadanaSampleclientRuby::ApiError => e
   puts "Exception when calling NodeServiceApi->get_nodes2: #{e}"
@@ -33,7 +77,10 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **String**|  | [optional] 
 
 ### Return type
 

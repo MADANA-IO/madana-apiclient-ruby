@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**password** | **String** |  | [optional] 
 **username** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNUserCredentials.new(password: null,
-                                 username: null)
+instance =   MadanaSampleclientRuby::JsonMDNUserCredentials.new(username: null,
+                                 password: null)
 ```
 
 

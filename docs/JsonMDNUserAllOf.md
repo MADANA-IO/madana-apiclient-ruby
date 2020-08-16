@@ -4,26 +4,26 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mail** | **String** |  | [optional] 
-**last_name** | **String** |  | [optional] 
-**guid** | **String** |  | [optional] 
-**settings** | [**Array&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
 **social_accounts** | [**Array&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
-**credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 **first_name** | **String** |  | [optional] 
+**settings** | [**Array&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
+**guid** | **String** |  | [optional] 
+**last_name** | **String** |  | [optional] 
+**mail** | **String** |  | [optional] 
+**credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNUserAllOf.new(mail: null,
-                                 last_name: null,
-                                 guid: null,
+instance =   MadanaSampleclientRuby::JsonMDNUserAllOf.new(social_accounts: null,
+                                 first_name: null,
                                  settings: null,
-                                 social_accounts: null,
-                                 credentials: null,
-                                 first_name: null)
+                                 guid: null,
+                                 last_name: null,
+                                 mail: null,
+                                 credentials: null)
 ```
 
 

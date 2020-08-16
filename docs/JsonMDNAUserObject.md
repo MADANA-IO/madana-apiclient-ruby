@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**image** | **String** |  | [optional] 
-**activated** | **String** |  | [optional] 
 **created** | **String** |  | [optional] 
+**activated** | **String** |  | [optional] 
 **last_active** | **String** |  | [optional] 
+**image** | **String** |  | [optional] 
 **user_name** | **String** |  | [optional] 
 
 ## Code Sample
@@ -15,10 +15,10 @@ Name | Type | Description | Notes
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNAUserObject.new(image: null,
+instance =   MadanaSampleclientRuby::JsonMDNAUserObject.new(created: null,
                                  activated: null,
-                                 created: null,
                                  last_active: null,
+                                 image: null,
                                  user_name: null)
 ```
 

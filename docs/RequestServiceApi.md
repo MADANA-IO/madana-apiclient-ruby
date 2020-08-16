@@ -9,10 +9,11 @@ Method | HTTP request | Description
 [**create_new_request**](RequestServiceApi.md#create_new_request) | **POST** /requests | Endpoint used to create a new Analysis Request.
 [**get_actions**](RequestServiceApi.md#get_actions) | **GET** /requests/actions | 
 [**get_agent**](RequestServiceApi.md#get_agent) | **GET** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**get_all_requests**](RequestServiceApi.md#get_all_requests) | **GET** /requests | Returns UUIDs of existing analyses.
+[**get_all_requests2**](RequestServiceApi.md#get_all_requests2) | **GET** /requests | Returns UUIDs of existing analyses.
 [**get_data**](RequestServiceApi.md#get_data) | **GET** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**get_request**](RequestServiceApi.md#get_request) | **GET** /requests/{uuid} | Returns the details for certain Request.
 [**get_result**](RequestServiceApi.md#get_result) | **GET** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
+[**get_status**](RequestServiceApi.md#get_status) | **GET** /requests/stats | 
 [**give_consent**](RequestServiceApi.md#give_consent) | **POST** /requests/{uuid}/consent | Used to give consent for request.
 [**init_request_parameters**](RequestServiceApi.md#init_request_parameters) | **POST** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
 [**set_agent**](RequestServiceApi.md#set_agent) | **POST** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
@@ -22,7 +23,7 @@ Method | HTTP request | Description
 
 ## add_data
 
-> JsonAnalysis add_data(uuid, opts)
+> File add_data(uuid, opts)
 
 Is used to upload and park the data till the AnalysisRequest gets processed.
 
@@ -61,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -75,7 +76,7 @@ No authorization required
 
 ## cancel_processing
 
-> JsonAnalysis cancel_processing(uuid, opts)
+> File cancel_processing(uuid, opts)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -114,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -276,9 +277,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## get_all_requests
+## get_all_requests2
 
-> File get_all_requests(opts)
+> File get_all_requests2(opts)
 
 Returns UUIDs of existing analyses.
 
@@ -304,10 +305,10 @@ opts = {
 
 begin
   #Returns UUIDs of existing analyses.
-  result = api_instance.get_all_requests(opts)
+  result = api_instance.get_all_requests2(opts)
   p result
 rescue   MadanaSampleclientRuby::ApiError => e
-  puts "Exception when calling RequestServiceApi->get_all_requests: #{e}"
+  puts "Exception when calling RequestServiceApi->get_all_requests2: #{e}"
 end
 ```
 
@@ -392,7 +393,7 @@ No authorization required
 
 ## get_request
 
-> JsonAnalysis get_request(uuid, opts)
+> File get_request(uuid, opts)
 
 Returns the details for certain Request.
 
@@ -429,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -443,7 +444,7 @@ No authorization required
 
 ## get_result
 
-> JsonAnalysisResult get_result(uuid, opts)
+> File get_result(uuid, opts)
 
 Can be called from creator to request the AnalysisResult.
 
@@ -480,7 +481,47 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysisResult**](JsonAnalysisResult.md)
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## get_status
+
+> File get_status
+
+
+
+### Example
+
+```ruby
+# load the gem
+require 'madana-sampleclient-ruby'
+
+api_instance =   MadanaSampleclientRuby::RequestServiceApi.new
+
+begin
+  result = api_instance.get_status
+  p result
+rescue   MadanaSampleclientRuby::ApiError => e
+  puts "Exception when calling RequestServiceApi->get_status: #{e}"
+end
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**File**
 
 ### Authorization
 
@@ -494,7 +535,7 @@ No authorization required
 
 ## give_consent
 
-> JsonAnalysis give_consent(uuid, opts)
+> File give_consent(uuid, opts)
 
 Used to give consent for request.
 
@@ -531,7 +572,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -649,7 +690,7 @@ No authorization required
 
 ## set_result
 
-> JsonAnalysis set_result(uuid, opts)
+> File set_result(uuid, opts)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -688,7 +729,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 

@@ -4,18 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**password** | **String** |  | [optional] 
 **token** | **String** |  | [optional] 
 **mail** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNPasswordReset.new(password: null,
-                                 token: null,
-                                 mail: null)
+instance =   MadanaSampleclientRuby::JsonMDNPasswordReset.new(token: null,
+                                 mail: null,
+                                 password: null)
 ```
 
 

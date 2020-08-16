@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**token** | **String** |  | [optional] 
 **verifier** | **String** |  | [optional] 
+**token** | **String** |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNOAuthToken.new(token: null,
-                                 verifier: null)
+instance =   MadanaSampleclientRuby::JsonMDNOAuthToken.new(verifier: null,
+                                 token: null)
 ```
 
 

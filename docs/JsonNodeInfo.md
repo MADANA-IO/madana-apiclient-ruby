@@ -4,42 +4,44 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hardware_baseboard** | **String** |  | [optional] 
-**public_key** | **String** |  | [optional] 
+**cpu_model** | **String** |  | [optional] 
+**hardware_firmware** | **String** |  | [optional] 
+**cpu_family** | **String** |  | [optional] 
 **memory** | **String** |  | [optional] 
-**processors** | **Array&lt;String&gt;** |  | [optional] 
 **cpu_logical_count** | **Integer** |  | [optional] 
-**connection_url** | **String** |  | [optional] 
+**hardware_baseboard** | **String** |  | [optional] 
 **operating_system** | **String** |  | [optional] 
+**public_key** | **String** |  | [optional] 
+**processors** | **Array&lt;String&gt;** |  | [optional] 
+**ipfs_info** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**cpu_frequency** | **String** |  | [optional] 
+**operating_system_uptime** | **Float** |  | [optional] 
+**owner** | **String** |  | [optional] 
 **cpu_physical_cores** | **Integer** |  | [optional] 
 **status** | **String** |  | [optional] 
-**operating_system_uptime** | **Float** |  | [optional] 
-**cpu_model** | **String** |  | [optional] 
-**owner** | **String** |  | [optional] 
-**cpu_family** | **String** |  | [optional] 
-**cpu_frequency** | **String** |  | [optional] 
-**hardware_firmware** | **String** |  | [optional] 
+**connection_url** | **String** |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonNodeInfo.new(hardware_baseboard: null,
-                                 public_key: null,
+instance =   MadanaSampleclientRuby::JsonNodeInfo.new(cpu_model: null,
+                                 hardware_firmware: null,
+                                 cpu_family: null,
                                  memory: null,
-                                 processors: null,
                                  cpu_logical_count: null,
-                                 connection_url: null,
+                                 hardware_baseboard: null,
                                  operating_system: null,
+                                 public_key: null,
+                                 processors: null,
+                                 ipfs_info: null,
+                                 cpu_frequency: null,
+                                 operating_system_uptime: null,
+                                 owner: null,
                                  cpu_physical_cores: null,
                                  status: null,
-                                 operating_system_uptime: null,
-                                 cpu_model: null,
-                                 owner: null,
-                                 cpu_family: null,
-                                 cpu_frequency: null,
-                                 hardware_firmware: null)
+                                 connection_url: null)
 ```
 
 

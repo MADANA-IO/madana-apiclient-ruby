@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
+**id** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
 
 ## Code Sample
@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 ```ruby
 require '  MadanaSampleclientRuby'
 
-instance =   MadanaSampleclientRuby::JsonMDNSetting.new(id: null,
-                                 name: null,
+instance =   MadanaSampleclientRuby::JsonMDNSetting.new(name: null,
+                                 id: null,
                                  description: null)
 ```
 
